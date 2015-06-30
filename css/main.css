@@ -1,28 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
 
-
-@media screen and (min-width: @screen-md-min) {
-	body{
-	}
-}
-
 @media screen and (max-width: 992px){
 	body{
-		background-image:none;
-		font-size: 16px;
+		background-image: none !important;
+		font-size: 16px !important;
 	}
 
 	#tagline{
 		display: none;
 	}
+	.container-fluid{
+		margin: 0px !important;
+	}
 
-	#main-container{
-		margin: 0px;
+	nav {
+		text-align: left !important;
+		position: relative;
+
 	}
 
 }
-
 
 ul{
 	padding: 0px;
@@ -36,18 +34,11 @@ nav li{
 }
 
 nav{
-	position: absolute;
-	top: 10px;
+	position: static;
 	right: 10px;
-	padding-top: 10px;
-	padding-right: 10px;
+	top: 10px;
+	text-align: right;
 }
-
-.container-fluid{
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
 
 body{
 	background-image: url("../img/background.jpg");
@@ -92,7 +83,7 @@ h3{
 	color: #505050;
 }
 
-#main-container{
+.container-fluid{
 	margin-left: 30%;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -150,4 +141,7 @@ footer{
 	font-size: 80%;
 	text-align: right;
 }
+
+
+
 
